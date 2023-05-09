@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1200.0" style="-fx-background-color: #a8cce0;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.home_skrobanek.lebenslauf.controller.MenuController">
+   <children>
+      <ImageView fitHeight="733.0" fitWidth="1152.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="102.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-130.0">
+         <image>
+            <Image url="@icons/web_mountainmoments-6896-2193489612.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane prefHeight="500.0" prefWidth="101.0" style="-fx-background-color: #2b2827;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button layoutX="19.0" layoutY="702.0" mnemonicParsing="false" onAction="#onSettingsClicked" prefHeight="63.0" prefWidth="62.0" style="-fx-background-color: #2b2827;" AnchorPane.bottomAnchor="20.0">
+               <graphic>
+                  <ImageView fitHeight="44.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/settings.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="102.0" prefHeight="70.0" prefWidth="798.0" style="-fx-background-color: white;" AnchorPane.leftAnchor="102.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button layoutX="20.0" layoutY="15.0" mnemonicParsing="false" style="-fx-background-color: white;">
+               <graphic>
+                  <ImageView fitHeight="31.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/glocke.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Label layoutX="468.0" layoutY="1.0" text="Lebenslauf" AnchorPane.topAnchor="1.0">
+               <font>
+                  <Font name="System Bold" size="32.0" />
+               </font>
+            </Label>
+            <Label layoutX="495.0" layoutY="40.0" text="von Timo Skrobanek" />
+            <AnchorPane layoutX="1008.0" layoutY="9.0" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: gray; -fx-background-radius: 80;" AnchorPane.rightAnchor="30.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="102.0" layoutY="190.0" prefHeight="410.0" prefWidth="656.0" style="-fx-background-color: #a8cce0;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="102.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="200.0">
+         <children>
+            <AnchorPane layoutX="15.0" layoutY="14.0" minHeight="0.0" minWidth="0.0" prefHeight="258.0" prefWidth="359.0" style="-fx-background-color: white;" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="14.0">
+               <children>
+                  <Label layoutX="121.0" layoutY="5.0" text="Persönliches" textFill="#fa6666">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="39.0" fitWidth="36.0" layoutX="60.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/comment.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="111.0" layoutY="55.0" text="Timo Skrobanek" />
+                  <Label layoutX="112.0" layoutY="72.0" text="Programmierer">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="259.0" layoutY="55.0" text="4:42pm" textFill="#717070" />
+                  <Label layoutX="60.0" layoutY="100.0" text="Ich bin 21 Jahre alt und komme aus &#10;Heidelberg. 2018 machte ich meinen&#10;Realschulabschluss und 2021 mein Abitur &#10;mit den Leistungskursen Physik und &#10;Informatik." textAlignment="JUSTIFY" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="14.0" layoutY="284.0" minHeight="0.0" minWidth="0.0" prefHeight="300.0" prefWidth="359.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="284.0">
+               <children>
+                  <Label layoutX="53.0" layoutY="14.0" text="Schule und Ausbildung" textFill="#8399cf">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="32.0" layoutY="67.0" text="2012-2018 Realschulabschluss" />
+                  <Line endX="200.0" layoutX="127.0" layoutY="97.0" startX="-100.0" />
+                  <Button layoutX="254.0" layoutY="64.0" mnemonicParsing="false" onAction="#onClickMiddleSchoolDegree" prefHeight="18.0" prefWidth="66.0" style="-fx-background-color: #5ce544;" text="read more" textFill="WHITE">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Label layoutX="32.0" layoutY="113.0" text="2018-2021 Abitur" />
+                  <Button layoutX="254.0" layoutY="109.0" mnemonicParsing="false" onAction="#onClickHighschoolDegree" prefHeight="18.0" prefWidth="66.0" style="-fx-background-color: #5ce544;" text="read more" textFill="WHITE">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Label layoutX="31.0" layoutY="165.0" text="2022-20XX Informatikstudium" />
+                  <Button layoutX="262.0" layoutY="162.0" mnemonicParsing="false" onAction="#onClickUniversityDegree" prefHeight="24.0" prefWidth="56.0" style="-fx-background-color: red;" text="not yet" textFill="WHITE">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Line endX="200.0" layoutX="127.0" layoutY="147.0" startX="-100.0" />
+                  <Line endX="220.39999389648438" layoutX="126.0" layoutY="201.0" startX="-113.19998168945312" strokeWidth="3.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="390.0" layoutY="14.0" minHeight="0.0" minWidth="0.0" prefHeight="304.0" prefWidth="694.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="282.0" AnchorPane.leftAnchor="389.7273193359375" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0">
+               <children>
+                  <ImageView fitHeight="183.0" fitWidth="381.0" layoutY="123.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/undraw_Code_thinking_re_gka2(1).png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="287.0" layoutY="5.0" text="IT-Erfahrung" textFill="#90d763">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="352.0" layoutY="63.0" text="Programmieren nur im Beruf?" textFill="#89b26e">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="353.0" layoutY="99.0" text="Seit 2016 beschäftige ich mich mit der Programmierung und &#10;habe im Oktober mit Java angefangen. Nach etwa 2 Jahren&#10;und vielen anderen Sprachen wie C#,C++ oder auch einmal &#10;Assembler konnte ich meine ersten Aufträge annehmen.&#10;&#10;Seitdem programmiere ich Software im Nebenerwerb für&#10;Firmen und Privatpersonen, wobei es oftmals Internetseiten&#10;sind" />
+                  <Button layoutX="353.0" layoutY="257.0" mnemonicParsing="false" onAction="#readMoreFromBlog" prefHeight="24.0" prefWidth="87.0" style="-fx-background-color: #5ce544;" text="Read more" textFill="WHITE">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="390.0" layoutY="334.0" minHeight="0.0" minWidth="0.0" prefHeight="250.0" prefWidth="694.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="389.7273193359375" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="334.0">
+               <children>
+                  <Label layoutX="141.0" layoutY="9.0" text="Berufliche Erfahrung" textFill="#fab066">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Line endX="-100.0" endY="169.19998168945312" layoutX="115.0" layoutY="59.0" startX="-100.0" strokeWidth="3.0" />
+                  <Line endX="320.60003662109375" endY="-3.0517578125E-5" layoutX="117.0" layoutY="229.0" startX="-100.0" strokeWidth="3.0" />
+                  <Line endX="-56.20001220703125" endY="6.999969482421875" layoutX="157.0" layoutY="170.0" startX="-142.121337890625" startY="56.878631591796875" stroke="#36940d" />
+                  <Line endX="-30.0" endY="14.0" layoutX="240.0" layoutY="121.0" startX="-142.121337890625" startY="56.878631591796875" stroke="#36940d" />
+                  <Circle fill="#28690a" layoutX="102.0" layoutY="176.0" radius="9.0" stroke="BLACK" strokeType="INSIDE">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Circle>
+                  <Label layoutX="70.0" layoutY="107.0" text="Praktikum">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="56.0" layoutY="124.0" text="2017 &#10;Condor-Flugdienst" textAlignment="CENTER">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                  </Label>
+                  <Circle fill="#28690a" layoutX="210.0" layoutY="135.0" radius="9.0" stroke="BLACK" strokeType="INSIDE">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Circle>
+                  <Label layoutX="178.0" layoutY="150.0" text="Praktikum">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="153.0" layoutY="169.0" text="2019&#10;DVAG, Fachinformatiker&#10;für Systemintegration" textAlignment="CENTER">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                  </Label>
+                  <Line endX="-44.60003662109375" endY="41.600006103515625" layoutX="355.0" layoutY="81.0" startX="-145.0" startY="54.0" stroke="#36940d" />
+                  <Circle fill="#28690a" layoutX="311.0" layoutY="122.0" radius="9.0" stroke="BLACK" strokeType="INSIDE">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Circle>
+                  <Label layoutX="260.0" layoutY="53.0" text="Selbstständigkeit">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="257.0" layoutY="72.0" text="2022&#10;Eigenes Unternehmen" textAlignment="CENTER">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                  </Label>
+                  <AnchorPane layoutX="474.0" layoutY="13.0" prefHeight="211.0" prefWidth="222.0" style="-fx-background-color: #edefee; -fx-background-radius: 40;" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+                     <children>
+                        <ImageView fitHeight="39.0" fitWidth="36.0" layoutX="93.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icons/info.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="14.0" layoutY="53.0" prefHeight="119.0" prefWidth="194.0" text="Während meiner Zeit in der Oberstufe,&#10;haben Freunde mit mir eine App &#10;programmiert um Nachhilfe zu &#10;revolutionieren. Diese App&#10;heißt Braindating und brachte &#10;uns den ersten&#10;Platz bei Jugendforscht." textAlignment="CENTER">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Label>
+                        <Button layoutX="67.0" layoutY="177.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="87.0" style="-fx-background-color: #5ce544;" text="Braindating.de" textFill="WHITE">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" />
+   </children>
+</AnchorPane>
